@@ -49,7 +49,7 @@ window.addEventListener('online', () => {
 });
 
 window.addEventListener('offline', () => {
-  resDiv.innerHTML = "No internet connection, check your wifi or cable and try again";
+  resDiv.innerHTML = "Não é possível carregar, verifique sua conexão com a Internet e tente novamente.";
 });
 
 
@@ -65,10 +65,10 @@ searchForm.addEventListener('submit', (e) => {
 
     searchMovie(movieTerm);
     searchHeading.style.display = "block";
-    searchHeading.innerHTML = `Searching For: <span>${movieTerm}</span>`;
+    searchHeading.innerHTML = `Resultados para: <span>${movieTerm}</span>`;
 
   } else {
-    alert('Enter any keyword..');
+    alert('Digite uma palavra-chave para buscar...');
     return false;
   }
 
@@ -105,7 +105,7 @@ const searchMovie = (movie) => {
             <img src="${movieInfo.medium_cover_image}" alt="${movieInfo.title}">
             <input type="hidden" value="${movieInfo.id}">
             <div>
-            <button id="open" class="open">Download Movie </button>
+            <button id="open" class="open">Baixar Filme </button>
             </div>
           </div>
         `;
@@ -149,7 +149,7 @@ const getMovies = () => {
             <img src="${movieInfo.medium_cover_image}" alt="${movieInfo.title}">
             <input type="hidden" value="${movieInfo.id}">
             <div>
-            <button id="open" class="open">Download Movie </button>
+            <button id="open" class="open">Baixar Filme </button>
             </div>
           </div>
          
@@ -210,11 +210,11 @@ const getMovieById = (id) => {
             <ul>
             ${movieObj.torrents.map(torrent => `
             <li>Download: <a href="${torrent.url}">${torrent.url}</a></li>
-            <li>Quality: ${torrent.quality} | Type: ${torrent.type} | Size: ${torrent.size} | Seeds: ${torrent.seeds} | Peers: ${torrent.peers}</li>
+            <li>Qualidade: ${torrent.quality} | Tipo: ${torrent.type} | Tamanho: ${torrent.size} | Seeds: ${torrent.seeds} | Peers: ${torrent.peers}</li>
             <hr>
             `).join('')}
             </ul>
-            <h2>Movie Trailer</h2>
+            <h2>Trailer </h2>
             <div class="trailer">
             
             <iframe width="560" height="315" src="https://www.youtube.com/embed/${movieObj.yt_trailer_code}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
