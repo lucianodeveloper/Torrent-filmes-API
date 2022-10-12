@@ -70,7 +70,7 @@ p{
   text-overflow: ellipsis;
   cursor: pointer;
   text-align: center;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.8);
+  box-shadow: 1px 2px 3px rgba(130, 67, 99, 0.8)
 }
 
 button{
