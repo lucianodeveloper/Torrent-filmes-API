@@ -153,7 +153,7 @@ info a:hover{
 }
 
 .close:hover{
-  color:#00796b;
+  color:#8595d1;
   transition:all 0.6s ease-in;
   transform: scale(3) rotate(360deg);
 }
@@ -267,6 +267,6 @@ info a:hover{
       place-items: center;
     }
     .movie-title{
-      width:900px;
+      width:400px;
     }
 }
