@@ -51,8 +51,8 @@ p{
   margin-top: -21px;
   background-position: center;
   flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
   background-size: 100%;
 }
@@ -60,7 +60,7 @@ p{
 .movie img:hover{
   box-shadow: 1px 2px 3px rgba(0,0,0,0.8);
   cursor: pointer;
-  transform: scale(0.9)
+  transform: scale(2)
 }
 
 .movie-title{
