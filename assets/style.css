@@ -70,7 +70,7 @@ p{
   text-overflow: ellipsis;
   cursor: pointer;
   text-align: center;
-  box-shadow: 1px 2px 3px rgba(130, 67, 99, 0.8)
+  box-shadow: 1px 2px 3px rgba(40, 0, 195, 0.8)
 }
 
 button{
@@ -84,7 +84,7 @@ button{
 
 .open{
   margin-top:10px;
-  background-color: teal;
+  background-color: 1px 2px 3px rgba(40, 0, 195, 0.8);
 }
 
 .info{
