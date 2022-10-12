@@ -131,7 +131,7 @@ const searchMovie = (movie) => {
 
 const getMovies = () => {
 
-  fetch(`https://yts.mx/api/v2/list_movies.json?page=${current_page}`)
+  fetch(`https://yts.mx/api/v2/list_movies.json?page=${page_number}`)
     .then(response => {
       return response.json();
     })
