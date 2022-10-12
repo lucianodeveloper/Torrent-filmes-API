@@ -131,7 +131,7 @@ const searchMovie = (movie) => {
 
 const getMovies = () => {
 
-  fetch(`https://yts.mx/api/v2/list_movies.json?page=${page_number}`)
+  fetch(`https://yts.mx/api/v2/list_movies.json?page=${current_page}`)
     .then(response => {
       return response.json();
     })
@@ -234,3 +234,15 @@ const getMovieById = (id) => {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+Footer
+© 2022 GitHub, Inc.
