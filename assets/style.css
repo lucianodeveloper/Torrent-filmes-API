@@ -50,7 +50,7 @@ p{
   transition: all .3s ease-in-out;
   margin-top: -21px;
   background-position: center;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 
