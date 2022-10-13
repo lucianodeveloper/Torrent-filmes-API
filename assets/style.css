@@ -271,4 +271,8 @@ info a:hover{
     .movie-title{
       width:400px;
     }
+    .rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+}
 }
